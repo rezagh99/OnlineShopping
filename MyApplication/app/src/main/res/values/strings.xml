@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hey Shop!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_us">About Us</string>
+    <string name="Reza">Reza</string>
+    <string name="StuNo1_96521425">Reza Ghahremani, 96521425</string>
+    <string name="Mercedeh">Mercedeh</string>
+    <string name="StuNo2_96529652">Mercedeh Irani, 96529652</string>
+    <string name="choose">Choose an Item</string>
+    <string name="Work_Table">great work table</string>
+    <string name="typeof">Type :</string>
+    <string name="Metaly">Metal</string>
+    <string name="kala_details">Item Details</string>
+    <string name="kalaimage">KalaImage</string>
+    <string name="kalaimage2">Kalaimage2</string>
+    <string name="company">Company:</string>
+    <string name="Area">Area</string>
+    <string name="itsArea">120cm * 120cm</string>
+    <string name="ikea">IKEA</string>
+    <string name="sGray">Gray</string>
+</resources>
