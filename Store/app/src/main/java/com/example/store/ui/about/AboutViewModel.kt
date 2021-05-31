@@ -3,11 +3,12 @@ package com.example.store.ui.about
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.store.model.entity.Member
+import com.example.store.model.repository.AboutDataRepository
 
 class AboutViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+    val members: MutableLiveData<List<Member>> = MutableLiveData<List<Member>>().apply {
+        value = AboutDataRepository.getMember()
     }
-    val text: LiveData<String> = _text
 }
