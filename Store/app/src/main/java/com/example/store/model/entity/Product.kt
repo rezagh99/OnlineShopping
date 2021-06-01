@@ -6,7 +6,7 @@ import android.media.Image
 data class Product(
     val name: String,
     val price: String,
-    val image:String,
+    val image:Int,
     val leftNum: String,
     val score: String, ) {
         // simple version
