@@ -10,5 +10,18 @@ object AboutDataRepository {
 
     }
 
+    fun getMember1():Member?{
+        val member_1=LocalDataBase.selectMembers()
+        val member: Member? = member_1.find { it.name == "Reza Ghahremani" }
+        return member
+    }
+
+    fun getMember2():Member?{
+        val member_2=LocalDataBase.selectMembers()
+        val member: Member? = member_2.find { it.name == "Mercedeh Irani" }
+        return member
+    }
+
+
 
 }

@@ -18,7 +18,7 @@ import com.example.store.ui.home.ProductAdapter
 
 class AboutFragment : Fragment() {
 
-    private lateinit var galleryViewModel: AboutViewModel
+    private lateinit var aboutViewModel: AboutViewModel
 
     private var member_id: Int = -1
     private lateinit var memberImage: ImageView
@@ -52,18 +52,29 @@ super.onCreate(savedInstanceState)
 //    }
 //}
     ): View? {
-        galleryViewModel =
+        aboutViewModel =
             ViewModelProvider(this).get(AboutViewModel::class.java)
 
         val root = inflater.inflate(R.layout.fragment_about, container, false)
-       // val recyclerViewMember: RecyclerView = root.findViewById(R.id.recycler_view_member)
-        galleryViewModel.members.observe(viewLifecycleOwner,{members ->
+        memberName = root.findViewById(R.id.mem_name)
+        memberStu = root.findViewById(R.id.mem_stu)
+        memberImage = root.findViewById(R.id.image_mem)
+        memberName2 = root.findViewById(R.id.mem_name2)
+        memberStu2 = root.findViewById(R.id.mem_stu2)
+        memberImage2 = root.findViewById(R.id.image_mem2)
+        //memberName2.text = root.findViewById(R.id.mem_name2)
+        aboutViewModel.member1.observe(viewLifecycleOwner,{member1 ->
            // recyclerViewMember.adapter= AboutAdapter(members)
-
+           memberName.text = member1.name
+            memberStu.text = member1.studentNumber
+            memberImage.setImageResource(member1.image)
         })
 
-        galleryViewModel.members.observe(viewLifecycleOwner, { members ->
+        aboutViewModel.member2.observe(viewLifecycleOwner, { member2 ->
            // recyclerViewMember.adapter = AboutAdapter(members)
+            memberName2.text = member2.name
+            memberStu2.text = member2.studentNumber
+            memberImage2.setImageResource(member2.image)
        })
         return root
     }

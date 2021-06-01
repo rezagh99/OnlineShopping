@@ -6,10 +6,14 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.store.model.entity.Member
 import com.example.store.model.repository.AboutDataRepository
 
-class AboutViewModel(private val aboutDataRepository: List<Member>): ViewModel() {
+class AboutViewModel: ViewModel() {
 
-    val members: MutableLiveData<List<Member>> = MutableLiveData<List<Member>>().apply {
-        value = AboutDataRepository.getMember()
+    val member1: MutableLiveData<Member> = MutableLiveData<Member>().apply {
+        value = AboutDataRepository.getMember1()
+    }
+
+    val member2: MutableLiveData<Member> = MutableLiveData<Member>().apply {
+        value = AboutDataRepository.getMember2()
     }
 
 //    override fun<T: ViewModel?> create(modelClass: Class<T>): T{
