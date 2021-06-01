@@ -9,5 +9,11 @@ object HomeDataRepository {
 
     }
 
+    fun getProductByName(name:String):Product?{
+        val products=LocalDataBase.selectProducts()
+        val product: Product? = products.find { it.name == name }
+        return product
+    }
+
 
 }
