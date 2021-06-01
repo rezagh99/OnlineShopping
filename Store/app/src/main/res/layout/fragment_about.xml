@@ -12,11 +12,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="105dp"
+        android:layout_marginLeft="150dp"
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:text="@string/about_us"
-        android:textSize="40sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#0551a2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,6 @@
         app:layout_constraintVertical_bias="0.35"
         android:scaleType="centerCrop" />
 
-
     <TextView
         android:id="@+id/mem_name"
         android:layout_width="150dp"
@@ -89,6 +88,48 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#0551a2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_mem" />
+
+    <ImageView
+        android:id="@+id/image_mem2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="200dp"
+        android:scaleType="centerCrop"
+        android:textColor="#0551a2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/mem_name2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#0551a2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_mem" />
+
+    <TextView
+        android:id="@+id/mem_stu2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
         android:layout_marginRight="15dp"
         android:textColor="#0551a2"
         android:textSize="20sp"
@@ -126,5 +167,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
 
 </LinearLayout>

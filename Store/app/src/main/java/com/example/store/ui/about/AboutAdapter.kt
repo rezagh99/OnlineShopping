@@ -38,7 +38,7 @@ class AboutAdapter(private var member_list: List<Member>): RecyclerView.Adapter<
         val user: Member = member_list[position];
         holder.member_name.text = user.name
         holder.member_stu.text =user.studentNumber
-        //holder.product_img.src=kala.image
+        holder.member_img.setImageResource(user.image)
     }
 
     fun setMembers(members: List<Member>){
