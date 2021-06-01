@@ -21,13 +21,13 @@ class AboutFragment : Fragment() {
         galleryViewModel =
                 ViewModelProvider(this).get(AboutViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_about, container, false)
-        val recyclerViewMember: RecyclerView = root.findViewById(R.id.recycler_view_member)
-        galleryViewModel.members.observe(viewLifecycleOwner,{members ->
-            recyclerViewMember.adapter= AboutAdapter(members)
-        })
-        galleryViewModel.members.observe(viewLifecycleOwner, { members ->
-            recyclerViewMember.adapter = AboutAdapter(members)
-        })
+        //val recyclerViewMember: RecyclerView = root.findViewById(R.id.recycler_view_member)
+//        galleryViewModel.members.observe(viewLifecycleOwner,{members ->
+//            recyclerViewMember.adapter= AboutAdapter(members)
+//        })
+//        galleryViewModel.members.observe(viewLifecycleOwner, { members ->
+//            recyclerViewMember.adapter = AboutAdapter(members)
+//        })
         return root
     }
 }

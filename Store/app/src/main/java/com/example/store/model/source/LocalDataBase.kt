@@ -22,8 +22,8 @@ object LocalDataBase {
     }
 
     fun selectMembers(): List<Member> {
-        val meReza=Member("Reza Ghahremani","96521425","@drawable/rezagh")
-        val meMercedeh= Member("Mercedeh Irani","96525252","@drawable/irani")
+        val meReza=Member("Reza Ghahremani","96521425",R.drawable.rezagh)
+        val meMercedeh= Member("Mercedeh Irani","96525252",R.drawable.irani)
 
         return listOf(meReza,meMercedeh)
     }
