@@ -1,13 +1,29 @@
 package com.example.store.ui.about
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.example.store.model.entity.Member
+import com.example.store.model.repository.AboutDataRepository
 
-class AboutViewModel : ViewModel() {
+class AboutViewModel: ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+    val member1: MutableLiveData<Member> = MutableLiveData<Member>().apply {
+        value = AboutDataRepository.getMember1()
     }
-    val text: LiveData<String> = _text
+
+    val member2: MutableLiveData<Member> = MutableLiveData<Member>().apply {
+        value = AboutDataRepository.getMember2()
+    }
+
+//    override fun<T: ViewModel?> create(modelClass: Class<T>): T{
+//        return AboutViewModel(aboutDataRepository) as T
+//    }
 }
+
+
+
+
+
+
+

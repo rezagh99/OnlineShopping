@@ -10,4 +10,15 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="about_us">Group 4</string>
+    <string name="aboutus">AboutUs</string>
+    <string name="aboutusimage">AboutUsImage</string>
+    <string name="rezaimage">RezaImage</string>
+    <string name="iraniimage">IraniImage</string>
+    <string name="mercedeh_irani">Mercedeh Irani</string>
+    <string name="reza_ghahremani">Reza Ghahremani</string>
+    <string name="_95461027">95461027</string>
+    <string name="_96521425">96521425</string>
+    <string name="QRImage">qr_code</string>
+    <string name="qr_for_out_trello_tasks">QR for our Trello Tasks</string>
 </resources>
