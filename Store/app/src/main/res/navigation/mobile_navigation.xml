@@ -9,7 +9,11 @@
         android:id="@+id/nav_home"
         android:name="com.example.store.ui.home.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_detail"
+            app:destination="@id/nav_detail" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_about"
@@ -17,5 +21,14 @@
         android:label="About us"
         tools:layout="@layout/fragment_about" />
 
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.example.store.ui.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="productName"
+            app:argType="string" />
+    </fragment>
 
 </navigation>
