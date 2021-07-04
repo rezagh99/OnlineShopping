@@ -41,7 +41,7 @@ class ProductAdapter(private var product_list: List<Product>):
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val kala: Product = product_list[position];
         holder.product_name.text = "Product Name:"+kala.name
-        holder.product_price.text ="Product Price:"+ kala.price
+        holder.product_price.text ="Product Price:"+ kala.price+"Tomans"
         holder.product_img.setImageResource(kala.image)
     }
 
